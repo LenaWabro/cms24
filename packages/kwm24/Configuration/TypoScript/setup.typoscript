@@ -10,6 +10,7 @@
 page {
     includeCSS {
         theme = EXT:kwm24/Resources/Public/Scss/Theme/theme.scss
+        fancybox=EXT:kwm24/Resources/Public/Css/fancybox.min.css
     }
 
     includeJSLibs {
