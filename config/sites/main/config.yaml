@@ -1,0 +1,14 @@
+base: 'http://cms24portfolio.s2310456027.student.kwmhgb.at/'
+languages:
+  -
+    title: Deutsch
+    enabled: true
+    languageId: 0
+    base: /
+    locale: de_DE
+    navigationTitle: English
+    flag: at
+    hreflang: de_DE
+    websiteTitle: ''
+rootPageId: 12
+websiteTitle: ''

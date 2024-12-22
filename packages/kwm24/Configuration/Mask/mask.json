@@ -1,0 +1,117 @@
+{
+    "version": "8.1.0",
+    "restructuringDone": false,
+    "tables": {
+        "tt_content": {
+            "elements": {
+                "lightboxnew": {
+                    "color": "#000000",
+                    "colorOverlay": "#000000",
+                    "columns": [
+                        "tx_mask_lightmoxnew"
+                    ],
+                    "description": "",
+                    "descriptions": [
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "lightboxnew",
+                    "label": "Lightbox",
+                    "labels": [
+                        ""
+                    ],
+                    "shortLabel": "",
+                    "sorting": 0
+                },
+                "quote": {
+                    "color": "#000000",
+                    "colorOverlay": "#000000",
+                    "columns": [
+                        "tx_mask_header",
+                        "tx_mask_bodytext"
+                    ],
+                    "description": "",
+                    "descriptions": [
+                        "",
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "quote",
+                    "label": "quote",
+                    "labels": [
+                        "",
+                        ""
+                    ],
+                    "shortLabel": "",
+                    "sorting": 0
+                }
+            },
+            "sql": {
+                "tx_mask_bodytext": {
+                    "tt_content": {
+                        "tx_mask_bodytext": "mediumtext"
+                    }
+                },
+                "tx_mask_header": {
+                    "tt_content": {
+                        "tx_mask_header": "varchar(255) DEFAULT '' NOT NULL"
+                    }
+                },
+                "tx_mask_lightmoxnew": {
+                    "tt_content": {
+                        "tx_mask_lightmoxnew": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_bodytext": {
+                    "config": {
+                        "nullable": 0,
+                        "type": "text",
+                        "wrap": "virtual"
+                    },
+                    "fullKey": "tx_mask_bodytext",
+                    "key": "bodytext",
+                    "type": "text"
+                },
+                "tx_mask_header": {
+                    "config": {
+                        "nullable": 0,
+                        "type": "input"
+                    },
+                    "fullKey": "tx_mask_header",
+                    "key": "header",
+                    "type": "string"
+                },
+                "tx_mask_lightmoxnew": {
+                    "config": {
+                        "appearance": {
+                            "elementBrowserEnabled": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "sort": 0
+                            },
+                            "fileByUrlAllowed": 1,
+                            "fileUploadAllowed": 1,
+                            "useSortable": 1
+                        },
+                        "minitems": ""
+                    },
+                    "fullKey": "tx_mask_lightmoxnew",
+                    "key": "lightmoxnew",
+                    "onlineMedia": [
+                        "youtube",
+                        "vimeo"
+                    ],
+                    "type": "media"
+                }
+            }
+        }
+    }
+}

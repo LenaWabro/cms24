@@ -1,0 +1,28 @@
+//
+// Variables
+//
+@import "variables";
+
+//
+// Import needed Bootstrap Package Files
+//
+@import "EXT:bootstrap_package/Resources/Public/Scss/bootstrap5/theme";
+
+@import"card";
+
+
+#page-header {
+  background-color: #7b8b99 !important;
+  .nav-link{
+    color: white;
+  }
+}
+
+.btn-quaternary{
+  background-color: #7b8b99;
+  border:0;
+}
+
+.footer-section-meta{
+  background-color: #7b8b99;
+}
