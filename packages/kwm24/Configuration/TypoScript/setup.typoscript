@@ -22,12 +22,13 @@ page {
     }
 
     includeJSFooterlibs {
+        fancybox = EXT:kwm24/Resources/Public/JavaScript/Src/fancybox.min.js
+        main = EXT:kwm24/Resources/Public/JavaScript/Src/main.js
 
     }
 
     includeJSFooter {
         kwm24_scripts = EXT:kwm24/Resources/Public/JavaScript/Dist/scripts.js
-        60=EXT:kwm24/Resources/Public/JavaScript/Src/fancybox.min.js
     }
 }
 lib.maskContentElement {

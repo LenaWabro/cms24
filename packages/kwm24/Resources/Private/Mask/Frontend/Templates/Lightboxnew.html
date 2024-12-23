@@ -1,8 +1,13 @@
 <f:debug>{_all}</f:debug>
+<f:debug>{data.tx_mask_lightmoxnew}</f:debug>
 <f:if condition="{data.tx_mask_lightmoxnew}">
     <div class="masonry-grid">
         <f:for each="data.tx_mask_lightmoxnew" as="file">
-            <a class="masonry-item"
+            <a href="{f:uri.image(image: file)}" target="_blank">
+                {f:uri.image(image: file)}
+            </a>
+        </f:for>
+        <a class="masonry-item"
                data-src="{f:uri.image(image: file, maxWidth: 1200)}"
                data-fancybox="gallery"
                data-caption="{file.title} - {file.description}">
