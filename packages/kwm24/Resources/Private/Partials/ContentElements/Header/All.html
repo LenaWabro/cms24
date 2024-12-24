@@ -2,7 +2,14 @@
 <f:if condition="{data.header_layout} != 100">
     <f:if condition="{data.header} || {data.subheader} || {data.date}">
         <div class="frame-header">
-            <!--Überschrift von der Detailseite radikal entfernt-->
+            <f:render partial="Header/Header" arguments="{
+                header: data.header,
+                layout: data.header_layout,
+                class: settings.header.class,
+                displayClass: data.header_class,
+                positionClass: '{f:if(condition: data.header_position, then: \'text-{data.header_position}\')}',
+                link: data.header_link,
+                default: settings.header.defaultHeaderType}" />
             <f:render partial="Header/SubHeader" arguments="{
                 subheader: data.subheader,
                 layout: data.header_layout,

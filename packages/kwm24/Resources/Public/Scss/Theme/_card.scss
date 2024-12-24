@@ -5,3 +5,9 @@
     text-align: center;
   }
 }
+
+.card-group-element {
+  margin-top: 48px;
+  position: relative;  // Ermöglicht die Verschiebung der Karten
+  top: -72px;          // Lässt die Karte optisch "überstehen"
+}
