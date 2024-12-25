@@ -10,7 +10,9 @@
 page {
     includeCSS {
         theme = EXT:kwm24/Resources/Public/Scss/Theme/theme.scss
-        fancybox=EXT:kwm24/Resources/Public/Css/fancybox.min.css
+        #https://fancyapps.com/fancybox/getting-started/#cdn
+        fancybox = EXT:kwm24/Resources/Public/Css/fancybox.min.css
+        mask = EXT:kwm24/Resources/Public/Scss/mask/mask.scss
     }
 
     includeJSLibs {
@@ -22,22 +24,25 @@ page {
     }
 
     includeJSFooterlibs {
-        fancybox = EXT:kwm24/Resources/Public/JavaScript/Src/fancybox.min.js
-        main = EXT:kwm24/Resources/Public/JavaScript/Src/main.js
 
     }
 
     includeJSFooter {
         kwm24_scripts = EXT:kwm24/Resources/Public/JavaScript/Dist/scripts.js
+        fancybox = EXT:kwm24/Resources/Public/JavaScript/Src/fancybox.min.js
+        main = EXT:kwm24/Resources/Public/JavaScript/Src/main.js
     }
 }
+
 lib.maskContentElement {
     templateRootPaths {
         5 = EXT:bootstrap_package/Resources/Private/Templates/ContentElements
     }
+
     partialRootPaths {
         5 = EXT:bootstrap_package/Resources/Private/Partials/ContentElements
     }
+
     layoutRootPaths {
         5 = EXT:bootstrap_package/Resources/Private/Layouts/ContentElements
     }

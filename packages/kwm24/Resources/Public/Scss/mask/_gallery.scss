@@ -1,0 +1,14 @@
+.masonry-grid {
+  column-count: 3;
+  column-gap: 1em; /* Abstand zwischen den Spalten */
+}
+
+.masonry-item {
+  break-inside: avoid;
+}
+
+.masonry-item img {
+  width: 100%;
+  display: block;
+  margin-bottom: 1em;
+}
