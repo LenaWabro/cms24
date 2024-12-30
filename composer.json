@@ -44,7 +44,9 @@
 		"jweiland/sync-crop-areas": "^3",
 		"georgringer/news": "^12.0.0",
 		"fh-hagenberg/kwm24": "dev-main",
-		"mask/mask": "^8"
+		"mask/mask": "^8",
+		"in2code/femanager": "dev-main"
+
 	},
 	"repositories": [
 		{"type": "composer","url": "https://composer.typo3.org/"},
