@@ -1,0 +1,7 @@
+# Apply constants configuration here
+
+plugin.tx_mask {
+    view {
+        layoutRootPath = EXT:kwm2024/Resources/Private/Layouts/ContentElements/
+    }
+}
