@@ -24,13 +24,15 @@ page {
     }
 
     includeJSFooterlibs {
+        jquery= EXT:kwm24/Resources/Public/JavaScript/Dist/jquery-3.7.1.min.js
 
     }
 
     includeJSFooter {
         kwm24_scripts = EXT:kwm24/Resources/Public/JavaScript/Dist/scripts.js
-        10= EXT:kwm24/Resources/Public/JavaScript/Dist/jquery-3.7.1.min.js
         //60 = EXT:kwm24/Resources/Public/JavaScript/Src/fancybox.min.js
         60=EXT:kwm24/Resources/Public/JavaScript/Src/main.js
+        loadingBars= EXT:kwm24/Resources/Public/JavaScript/Dist/loadingBars.js
+
     }
 }
