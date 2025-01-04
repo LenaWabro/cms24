@@ -1,8 +1,5 @@
 console.log("main.js actions!")
 
-/*
-console.log("jQuery Version:", typeof jQuery !== 'undefined' ? jQuery.fn.jquery : "jQuery is not loaded!");
-
 document.addEventListener('DOMContentLoaded', function () {
     Fancybox.bind('[data-fancybox="gallery"]', {
         buttons: ["close"],
@@ -12,5 +9,5 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
- */
+
 
