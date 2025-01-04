@@ -11,8 +11,8 @@ page {
     includeCSS {
         theme = EXT:kwm24/Resources/Public/Scss/Theme/theme.scss
         #https://fancyapps.com/fancybox/getting-started/#cdn
-        fancybox = EXT:kwm2024/Resources/Public/Css/fancybox.min.css
-        mask = EXT:kwm2024/Resources/Public/Scss/mask/mask.scss
+        fancybox = EXT:kwm24/Resources/Public/Css/fancybox.min.css
+        mask = EXT:kwm24/Resources/Public/Scss/mask/mask.scss
     }
 
     includeJSLibs {
@@ -30,7 +30,7 @@ page {
 
     includeJSFooter {
         kwm24_scripts = EXT:kwm24/Resources/Public/JavaScript/Dist/scripts.js
-        //60 = EXT:kwm24/Resources/Public/JavaScript/Src/fancybox.min.js
+        fancybox = EXT:kwm24/Resources/Public/JavaScript/Src/fancybox.min.js
         60=EXT:kwm24/Resources/Public/JavaScript/Src/main.js
         loadingBars= EXT:kwm24/Resources/Public/JavaScript/Dist/loadingBars.js
 
