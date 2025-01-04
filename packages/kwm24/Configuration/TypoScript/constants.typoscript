@@ -38,9 +38,9 @@ plugin.bootstrap_package {
     }
 }
 
-plugin.tx_news.view.twb5.templateRootPath = EXT:news/Resources/Private/Templates/NewsExtension
-plugin.tx_news.view.twb5.partialRootPath = EXT:news/Resources/Private/Templates/Partials/NewsExtension
-plugin.tx_news.view.twb5.layoutRootPath = EXT:news/Resources/Private/Templates/Layouts/NewsExtension
+plugin.tx_news.view.twb5.templateRootPath = EXT:kwm24/Resources/Private/Templates/NewsExtension
+plugin.tx_news.view.twb5.partialRootPath = EXT:kwm24/Resources/Private/Templates/Partials/NewsExtension
+plugin.tx_news.view.twb5.layoutRootPath = EXT:kwm24/Resources/Private/Templates/Layouts/NewsExtension
 
 ########################
 ### CONTENT ELEMENTS ###
