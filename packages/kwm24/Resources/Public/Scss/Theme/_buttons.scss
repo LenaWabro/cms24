@@ -17,6 +17,7 @@
   color: #a4c3d0 !important;
 }
 
+//Download
 .btn-info{
   border: none;
   background: #a4c3d0;
@@ -34,5 +35,26 @@
 .btn-success:hover{
   background: #52869f;
 }
+
+
+//Sortiefunktion
+
+#c54 .news {
+  background: #e7e9ec;
+  border-radius: 20px;
+}
+
+.primary-sort {
+  background: #e7e9ec;
+  color: white;
+  border: none;
+}
+
+.primary-sort.active {
+  background-color: #52869f;
+  border-radius: 20px;
+  padding: 12px;
+}
+
 
 
