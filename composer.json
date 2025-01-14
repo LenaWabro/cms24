@@ -42,10 +42,11 @@
 		"bk2k/bootstrap-package": "^14",
 		"b13/container": "^2",
 		"jweiland/sync-crop-areas": "^3",
-		"georgringer/news": "^12.0.0",
 		"fh-hagenberg/kwm24": "dev-main",
 		"mask/mask": "^8",
-		"in2code/femanager": "dev-main"
+		"in2code/femanager": "dev-main",
+		"georgringer/news": "^12"
+
 
 	},
 	"repositories": [
