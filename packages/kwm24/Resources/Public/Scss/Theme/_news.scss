@@ -1,0 +1,38 @@
+/* Style for the buttons */
+.btn-primary-sort {
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+#c94 .news {
+  background: #7b8b99;
+  border-radius: 30px;
+}
+
+/* Specific style for article links */
+.col-md-9.articletype-0 h3 a, .col-md-9.articletype-0 h3 a:hover{
+  color: black;
+  text-decoration: none;
+}
+
+.breadcrumb-section {
+  display: none;
+}
+
+
+
+.mein-btn-read-more {
+  text-decoration: underline;
+  color: #7b8b99;
+}
+
+.mein-btn-read-more:hover{
+  color:#b3e5fc !important;
+}
+
+
+.btn-primary-sort.active {
+  background-color: #b3e5fc; /* Hellblau für aktive Kategorie */
+}
