@@ -1,0 +1,17 @@
+//HEADER
+.navbar-mainnavigation {
+  display: flex;
+  justify-content: space-evenly; /* Verteilung der Navigationselemente */
+  width: 100%;  /* Damit die Navigation die ganze Breite ausfüllt */
+}
+
+.nav-item {
+  padding: 10px;
+}
+
+.frame a:not([class]),
+a {
+  color: white;
+  text-decoration: none; /* Ensures no underlining on hover */
+
+}
