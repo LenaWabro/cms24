@@ -6,6 +6,17 @@
                 <div class="frame-group-inner">
                     <div class="frame-container frame-container-default">
                         <div class="frame-inner-footer">
+
+                            <!--Impressum und Co-->
+
+                                <a href="http://cms24portfolio.s2310456027.student.kwmhgb.at/impressum" class="footer-item">IMPRESSUM</a>
+                                <a href="http://cms24portfolio.s2310456027.student.kwmhgb.at/datenschutz" class="footer-item">DATENSCHUTZ</a>
+                                <a href="http://cms24portfolio.s2310456027.student.kwmhgb.at/nutzerschutz" class="footer-item">NUTZERSCHUTZ</a>
+                            </div>
+
+
+
+
                             <f:if condition="{theme.footernavigation.enable} || {theme.contact.enable}">
                                 <div class="footer-menu-section{f:if(condition: theme.footernavigation.enable, then: ' footer-menu-section-has-navigation')}{f:if(condition: theme.contact.enable, then: ' footer-menu-section-has-contact')}">
                                     <f:if condition="{theme.footernavigation.enable}">
@@ -38,6 +49,26 @@
                                     <f:if condition="{theme.socialmedia.enable}">
                                         <div class="footer-sociallinks">
                                             <f:render partial="Structure/SocialLinks" arguments="{_all}" />
+
+                                            <!-- Copyright Section (über den Social-Media-Links) -->
+                                            <f:if condition="{theme.copyright.enable}">
+                                                <div class="footer-copyright">
+                                                    <p>&copy; 2025 Lena Wabro</p>
+                                                </div>
+                                            </f:if>
+                                            <!-- Social Media Section -->
+                                            <div class="social-links" style="display: flex; justify-content: flex-end; gap: 15px;">
+                                                <div class="social-icon">
+                                                    <a href="https://de.pinterest.com/lenawabro/" target="_blank" title="Pinterest">
+                                                        <img src="/fileadmin/Website/Pinterest.png" alt="Pinterest" style="width: 32px; height: 32px;">
+                                                    </a>
+                                                </div>
+                                                <div class="social-icon">
+                                                    <a href="https://at.linkedin.com/" target="_blank" title="LinkedIn">
+                                                        <img src="/fileadmin/Website/LinkedIn.png" alt="LinkedIn" style="width: 32px; height: 32px;">
+                                                    </a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </f:if>
                                 </div>
@@ -50,3 +81,4 @@
     </section>
 </f:if>
 </html>
+
