@@ -1,0 +1,31 @@
+#c62 {
+  display: flex; /* Flexbox aktivieren */
+  flex-direction: column; /* Inhalte untereinander anordnen */
+  justify-content: center; /* Vertikale Zentrierung */
+  //align-items: center; /* Horizontale Zentrierung */
+  text-align: center; /* Optional: Text zentrieren */
+}
+
+#kontakt-58 {
+  text-align: left; /* Text linksbündig */
+  padding: 10px; /* Optional: Innenabstand */
+}
+
+.form-navigation {
+  display: flex; /* Aktiviert Flexbox */
+  justify-content: space-between; /* Schiebt die Buttons an die äußeren Ränder */
+  align-items: center; /* Vertikale Ausrichtung in der Mitte */
+  padding: 10px; /* Optional: Innenabstand */
+}
+
+#c40 {
+  text-align: left; /* Text links ausrichten */
+}
+
+/*
+//FORM//
+.form-select{
+  width: 45%
+}
+
+ */
