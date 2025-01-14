@@ -1,17 +1,149 @@
+/* Hauptnavigation
+//So mittig gefällt mir das Menü doch nicht :)
+.navbar-mainnavigation {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav-item {
+  flex: 1;
+  text-align: center;
+}
+
+
+.nav-link-text {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size:20px;
+}
+
+ */
+
 //HEADER
 .navbar-mainnavigation {
   display: flex;
-  justify-content: space-evenly; /* Verteilung der Navigationselemente */
+  justify-content: space-evenly;
   width: 100%;  /* Damit die Navigation die ganze Breite ausfüllt */
 }
 
 .nav-item {
-  padding: 10px;
+  padding: 30px;
 }
 
+
+
+
+
+/* Style for the buttons */
+.btn-primary-sort {
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none; /* Sicherstellen, dass keine Unterstreichung vorhanden ist */
+}
+
+/* Entferne Hover-Effekte für .btn-primary-sort */
+.btn-primary-sort:hover {
+  background-color: initial; /* Keine Hintergrundfarbe im Hover-Zustand */
+  color: white; /* Farbe bleibt im Hover-Zustand weiß */
+  border: none; /* Keine Umrandung im Hover-Zustand */
+}
+
+/* Keine Hover-Effekte für Links */
+.frame a[class=""]:hover,
+.frame a:not([class]):hover,
+.frame a[class=""],
 .frame a:not([class]),
 a {
   color: white;
-  text-decoration: none; /* Ensures no underlining on hover */
+  text-decoration: none; /* Keine Unterstreichung beim Hover */
+}
+
+/* Der Button für die aktive Kategorie bleibt unverändert */
+.btn-primary-sort.active {
+  background-color: #b3e5fc; /* Hellblau für aktive Kategorie */
+}
+
+
+.footer-section-content{
+  background-color: #7b8b99; /* Helles Blau */
+}
+
+
+
+//Sprache
+.language-menu {
+  display: flex; /* Legt die Elemente nebeneinander */
+  align-items: center; /* Vertikale Zentrierung */
+  gap: 10px; /* Abstand zwischen den Elementen */
+}
+
+.language-menu div {
+  display: flex;
+  align-items: center;
+}
+
+.language-menu div.active a img {
+  filter: brightness(1.2); /* Optional: Heller für aktive Sprache */
+}
+
+
+
+.language-menu div:not(:last-child)::after {
+  content: ''; //Trennstrich
+  display: block;
+  width: 1px;
+  height: 20px;
+  background-color: white;
+  margin-left: 10px; //Abstand zwischen Flagge und Strich
+}
+
+
+.footer-sociallinks .social-links {
+  display: flex;
+  justify-content: flex-end; /* Icons rechts ausrichten */
+  gap: 15px; /* Abstand zwischen den Icons */
+  padding-right: 20px; /* Optional: Abstand vom rechten Rand */
+}
+
+.footer-sociallinks .social-icon img {
+  width: 32px; /* Breite der Icons */
+  height: 32px; /* Höhe der Icons */
+}
+
+/* Copyright-Text nach rechts verschieben */
+.footer-copyright {
+  align-self: flex-end;
+  margin-bottom: 20px;
+  text-align: right;
+  font-size: 14px;
+}
+
+.frame-inner-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
 
 }
+
+.footer-item {
+  font-size: 18px;
+  display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
