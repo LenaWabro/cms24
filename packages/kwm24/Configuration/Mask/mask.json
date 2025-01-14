@@ -46,6 +46,26 @@
                     ],
                     "shortLabel": "",
                     "sorting": 0
+                },
+                "slider": {
+                    "color": "#000000",
+                    "colorOverlay": "#000000",
+                    "columns": [
+                        "tx_mask_slides"
+                    ],
+                    "description": "",
+                    "descriptions": [
+                        ""
+                    ],
+                    "icon": "",
+                    "iconOverlay": "",
+                    "key": "slider",
+                    "label": "slider",
+                    "labels": [
+                        ""
+                    ],
+                    "shortLabel": "",
+                    "sorting": 2
                 }
             },
             "sql": {
@@ -62,6 +82,11 @@
                 "tx_mask_images": {
                     "tt_content": {
                         "tx_mask_images": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                },
+                "tx_mask_slides": {
+                    "tt_content": {
+                        "tx_mask_slides": "int(11) unsigned DEFAULT '0' NOT NULL"
                     }
                 }
             },
@@ -109,6 +134,73 @@
                         "youtube",
                         "vimeo"
                     ],
+                    "type": "media"
+                },
+                "tx_mask_slides": {
+                    "config": {
+                        "appearance": {
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "new": 1,
+                                "sort": 1
+                            },
+                            "levelLinksPosition": "top",
+                            "showAllLocalizationLink": 1,
+                            "showNewRecordLink": 1,
+                            "showPossibleLocalizationRecords": 1,
+                            "useSortable": 1
+                        },
+                        "foreign_field": "parentid",
+                        "foreign_sortby": "sorting",
+                        "foreign_table": "--inlinetable--",
+                        "foreign_table_field": "parenttable",
+                        "type": "inline"
+                    },
+                    "fullKey": "tx_mask_slides",
+                    "key": "slides",
+                    "type": "inline"
+                }
+            }
+        },
+        "tx_mask_slides": {
+            "sql": {
+                "tx_mask_img": {
+                    "tx_mask_slides": {
+                        "tx_mask_img": "int(11) unsigned DEFAULT '0' NOT NULL"
+                    }
+                }
+            },
+            "tca": {
+                "tx_mask_img": {
+                    "config": {
+                        "appearance": {
+                            "elementBrowserEnabled": 1,
+                            "enabledControls": {
+                                "delete": 1,
+                                "dragdrop": 1,
+                                "hide": 1,
+                                "info": 1,
+                                "localize": 1,
+                                "sort": 0
+                            },
+                            "fileByUrlAllowed": 1,
+                            "fileUploadAllowed": 1,
+                            "useSortable": 1
+                        },
+                        "minitems": ""
+                    },
+                    "fullKey": "tx_mask_img",
+                    "inlineParent": "tx_mask_slides",
+                    "key": "img",
+                    "onlineMedia": [
+                        "youtube",
+                        "vimeo"
+                    ],
+                    "order": 1,
                     "type": "media"
                 }
             }
