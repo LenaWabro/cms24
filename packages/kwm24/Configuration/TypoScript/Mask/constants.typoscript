@@ -2,6 +2,6 @@
 
 plugin.tx_mask {
     view {
-        layoutRootPath = EXT:kwm2024/Resources/Private/Layouts/ContentElements/
+        layoutRootPath = EXT:kwm24/Resources/Private/Layouts/ContentElements/
     }
 }
