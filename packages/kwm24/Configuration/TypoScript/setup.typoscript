@@ -9,11 +9,11 @@
 ##############
 page {
     includeCSS {
+        #swiper= EXT:kwm24/Resources/Public/Css/swiper-bundle.min.css
+        swiper= https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css
         #https://fancyapps.com/fancybox/getting-started/#cdn
         fancybox = EXT:kwm24/Resources/Public/Css/fancybox.min.css
         mask = EXT:kwm24/Resources/Public/Scss/mask/mask.scss
-        swiper= https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css
-        #swiper= EXT:kwm24/Resources/Public/Css/swiper-bundle.min.css
         theme = EXT:kwm24/Resources/Public/Scss/Theme/theme.scss
 
     }
@@ -34,16 +34,25 @@ page {
     }
 
     includeJSFooter {
-
-
+        swiper=https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js
+        fancybox = EXT:kwm24/Resources/Public/JavaScript/Src/fancybox.min.js
         loadingBars= EXT:kwm24/Resources/Public/JavaScript/Dist/loadingBars.js
         #swiper=EXT:kwm24/Resources/Public/JavaScript/Dist/swiper-bundle.min.js
-        swiper=https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js
-        main=EXT:kwm24/Resources/Public/JavaScript/Src/main.js
+
         kwm24_scripts = EXT:kwm24/Resources/Public/JavaScript/Dist/scripts.js
-        fancybox = EXT:kwm24/Resources/Public/JavaScript/Src/fancybox.min.js
+        main=EXT:kwm24/Resources/Public/JavaScript/Src/main.js
+
+
 
     }
 }
 
 ##Resourcen immer vor meinen eigenen files einbinden sonst sind diese garnicht geladen wenn ich sie verwenden möchte
+
+
+//Fonts einbinden
+page.includeCSS.googleFonts = https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap
+page.includeCSS.googleFonts = https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap
+
+
+
