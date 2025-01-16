@@ -65,6 +65,19 @@
   border-radius: 20px;
 }
 
+@media (max-width: 768px) {
+  #c54 .news {
+    flex-direction: column; /* Kategorien untereinander anordnen */
+  }
+
+  .primary-sort {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+
+
+
 
 .btn-primary{
  color:white;
@@ -98,6 +111,14 @@
   --bs-btn-disabled-bg: none;
   --bs-btn-disabled-border-color: #7b8b99;
   --bs-gradient: none;
+}
+
+
+
+
+
+.swiper-button-next, .swiper-button-prev{
+  color: #7b8b99 !important;
 }
 
 

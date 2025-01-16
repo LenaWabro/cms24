@@ -1,6 +1,7 @@
 ######################
 #### DEPENDENCIES ####
 ######################
+# Dies stellt grundlegende Layouts und Styles zur Verfügung, die für das Design der Seite verwendet werden
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/constants.typoscript">
 
 
@@ -30,6 +31,7 @@ page {
 ##################
 ### EXTENSIONS ###
 ##################
+# Konfiguration der Bootstrap Package- und Mask-Extension, um benutzerdefinierte Templates und Layouts zu integrieren
 plugin.bootstrap_package {
     view {
         layoutRootPath = EXT:kwm24/Resources/Private/Layouts/
@@ -76,6 +78,8 @@ plugin.tx_felogin_login.view.layoutRootPath= EXT:kwm24/Resources/Private/Templat
 
 config.contentObjectExceptionHandler = 0
 
+
+# Hier definieren wir die Pfade zu den Layout-, Partial- und Template-Dateien für das News-Modul
 ###News###
 plugin.tx_news.view.twb5.templateRootPath = EXT:kwm24/Resources/Private/Templates/
 plugin.tx_news.view.twb5.partialRootPath = EXT:kwm24/Resources/Private/Partials/

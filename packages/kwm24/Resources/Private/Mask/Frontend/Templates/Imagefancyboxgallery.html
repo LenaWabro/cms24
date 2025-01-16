@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="masonry-grid">
-                    <!--Schleife über alle Bilder in `data.tx_mask_images-->
+                    <!--Schleife über alle Bilder in `data.tx_mask_images ob vorhanden-->
                     <f:for each="{data.tx_mask_images}" as="file">
                         <a
                             class="masonry-grid-item"
@@ -26,7 +26,7 @@
                         >
                             <img
                                 src="{f:uri.image(image: file, maxWidth: 400)}"
-                                loading="lazy"
+                                loading="lazy" <!-- Lazy Loading für bessere Performance -->
                             />
                             <h3>{file.title}</h3>
                             <p class="image-description">{file.description}</p>
