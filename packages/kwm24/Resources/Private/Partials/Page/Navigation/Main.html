@@ -1,5 +1,6 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:bk2k="http://typo3.org/ns/BK2K/BootstrapPackage/ViewHelpers" data-namespace-typo3-fluid="true">
 
+
 <f:variable name="headerClass">bp-page-header navbar navbar-mainnavigation navbar-{theme.navigation.style}</f:variable>
 <f:variable name="headerClass">{headerClass}{f:if(condition: logo.normal, then:' navbar-has-image')}</f:variable>
 <f:variable name="headerClass">{headerClass}{f:if(condition: theme.navigation.type, else:' navbar-top', then:' navbar-{theme.navigation.type} navbar-fixed-{theme.navigation.type}')}</f:variable>
@@ -15,22 +16,20 @@
 
                 <f:if condition="{languagenavigation}">
                     <div id="language_menu" class="language-menu">
+
                         <f:for each="{languagenavigation}" as="item">
                             <div class="{f:if(condition: item.active, then: 'active')} {f:if(condition: item.available, else: 'inactive')}">
                                 <f:if condition="{item.available}">
                                     <f:then>
-                                        <a href="{item.link}" hreflang="{item.hreflang}" title="{item.title}">
-                                            <img src="/fileadmin/Website/de.png" alt="{item.navigationTitle}" style="width: 20px; height: auto; margin-right: 5px;">
+                                        <a href="{item.link}" hreflang="{item.hreflang}" title="{item.navigationTitle}">
+                                            <img src="/fileadmin/Website/{item.hreflang}.png" alt="{item.hreflang}" style="width: 30px; height: auto; margin-right: 5px;">
                                             <!--<span>{item.navigationTitle}</span>-->
                                         </a>
                                     </f:then>
-                                    <f:else>
-                                        <img src="/fileadmin/Website/en.png" alt="{item.navigationTitle}" style="width: 20px; height: auto; margin-right: 5px;">
-                                        <!--<span>{item.navigationTitle}</span>-->
-                                    </f:else>
                                 </f:if>
                             </div>
                         </f:for>
+
                     </div>
                 </f:if>
             </nav>

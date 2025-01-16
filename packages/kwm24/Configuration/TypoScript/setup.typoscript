@@ -1,6 +1,10 @@
 ######################
 #### DEPENDENCIES ####
 ######################
+## Einbindung von TypoScript-Konfigurationen aus dem Bootstrap Package.
+## Diese stellt Grundfunktionen und Standard-Styling bereit und bildet die Basis für eigene Anpassungen.
+
+
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/setup.typoscript">
 
 
@@ -10,10 +14,16 @@
 page {
     includeCSS {
         #swiper= EXT:kwm24/Resources/Public/Css/swiper-bundle.min.css
+        # Einbindung der Swiper CSS von einem CDN (Content Delivery Network).
+        # Vorteil: Die Datei wird schneller geladen, da sie von global verteilten Servern kommt.
+        # Nachteil: Abhängigkeit vom CDN; bei Ausfällen wäre die Datei nicht verfügbar.
         swiper= https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css
         #https://fancyapps.com/fancybox/getting-started/#cdn
+
+        # Fancybox CSS: Lokale Einbindung, um Abhängigkeit von externen Diensten zu vermeiden.
         fancybox = EXT:kwm24/Resources/Public/Css/fancybox.min.css
-        mask = EXT:kwm24/Resources/Public/Scss/mask/mask.scss
+
+        # Eigene SCSS-Dateien für spezifische Anpassungen und Erweiterungen
         theme = EXT:kwm24/Resources/Public/Scss/Theme/theme.scss
 
     }
@@ -26,9 +36,9 @@ page {
 
     }
 
+    # Footer ist ideal, da JS erst nach dem Laden des HTMLs ausgeführt wird, was die Ladegeschwindigkeit verbessert.
     includeJSFooterlibs {
         jquery= EXT:kwm24/Resources/Public/JavaScript/Dist/jquery-3.7.1.min.js
-        ##binden es direkt von deren Seite ein- Problem: Falls deren Seite gerade nicht läuft-->CDN
         #swiper=https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js
 
     }
@@ -47,10 +57,26 @@ page {
     }
 }
 
+
+# Import der TypoScript-Konfiguration von der Mask-Extension.
+# Mask wird verwendet, um benutzerdefinierte Inhaltselemente effizient zu erstellen.
+@import 'EXT:mask/Configuration/TypoScript/setup.typoscript'
+
+lib.maskContentElement {
+    templateRootPaths {
+        5 = EXT:bootstrap_package/Resources/Private/Templates/ContentElements
+    }
+    partialRootPaths {
+        5 = EXT:bootstrap_package/Resources/Private/Partials/ContentElements
+    }
+    layoutRootPaths {
+        5 = EXT:bootstrap_package/Resources/Private/Layouts/ContentElements
+    }
+}
 ##Resourcen immer vor meinen eigenen files einbinden sonst sind diese garnicht geladen wenn ich sie verwenden möchte
 
 
-//Fonts einbinden
+//Fonts einbinden==>CDN
 page.includeCSS.googleFonts = https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap
 page.includeCSS.googleFonts = https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap
 

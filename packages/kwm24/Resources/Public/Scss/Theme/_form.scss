@@ -1,14 +1,15 @@
+//Kontaktformular zentriert ausrichten
 #c62 {
-  display: flex; /* Flexbox aktivieren */
-  flex-direction: column; /* Inhalte untereinander anordnen */
-  justify-content: center; /* Vertikale Zentrierung */
-  //align-items: center; /* Horizontale Zentrierung */
-  text-align: center; /* Optional: Text zentrieren */
+  display: flex;
+  flex-direction: column; //Inhalte untereinander anordnen
+  justify-content: center;
+  //align-items: center;
+  text-align: center;
 }
 
 #kontakt-58 {
-  text-align: left; /* Text linksbündig */
-  padding: 10px; /* Optional: Innenabstand */
+  text-align: left;
+  padding: 10px;
 }
 
 .form-navigation {
@@ -22,10 +23,74 @@
   text-align: left; /* Text links ausrichten */
 }
 
-/*
+
 //FORM//
 .form-select{
   width: 45%
 }
 
- */
+
+/* Versteckt h3 und p in #c188 */
+#c188 h3, #c188 p{
+  display: none;
+}
+
+
+
+
+/* Bild zentriert nach oben zur Linie */
+#c197 {
+  display: block;
+  margin: 0 auto;
+  width: 5em; /* 80px umgerechnet in em */
+  height: auto;
+  position: relative;
+  top: -7.8125em; /* -125px umgerechnet in em */
+}
+
+//Abstand von Divider
+#c187 {
+  top: -1.25em; /* -20px umgerechnet in em */
+  padding-top: 1.25em; /* 20px umgerechnet in em */
+}
+
+//Login Felder weiter rauf
+#c188{
+  top: -5em; /* -20px umgerechnet in em */
+  padding-top: 1.25em; /* 20px umgerechnet in em */
+}
+
+
+
+/* Zentriert und verschiebt #c192 nach oben */
+#c192{
+  display: block;
+  margin: 0 auto;
+  width: 80px;
+  height: auto;
+  position: relative;
+  top: -120px;
+}
+
+/* Verschiebt Bild nach oben */
+#c57 {
+  top: -150px;
+}
+
+/* Verschiebt Text/Header nach oben */
+#c190 {
+  top: -20px;
+  padding-top: 20px;
+}
+
+.alert .bg-danger{
+  background: orange;
+}
+
+
+
+
+
+
+
+

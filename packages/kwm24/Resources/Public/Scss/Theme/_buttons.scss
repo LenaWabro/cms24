@@ -41,7 +41,7 @@
 }
 
 
-//Sortiefunktion
+//Sortierfunktion
 
 #c54 .news {
   background: #e7e9ec;
@@ -53,13 +53,14 @@
 
 .primary-sort {
   background: #e7e9ec;
-  color: white;
+  color: black;
   border: none;
   padding: 12px;
   width: 100%;
 }
 
 .primary-sort.active {
+  color:white;
   background-color: #52869f;
   border-radius: 20px;
 }
@@ -74,6 +75,32 @@
   --bs-btn-active-bg: #52869f;
   --bs-btn-active-color: white;
 }
+
+.mein-btn-read-more {
+  text-decoration: underline;
+  color: #7b8b99;
+}
+
+
+.btn-outline-primary {
+  background-color: #7b8b99;
+  color:white;
+  --bs-btn-color: #7b8b99;
+  --bs-btn-border-color: #7b8b99;
+  --bs-btn-hover-color: white;
+  --bs-btn-hover-bg: #52869f;
+  --bs-btn-hover-border-color: #52869f;
+  --bs-btn-active-color: white;
+  --bs-btn-active-bg: #52869f;
+  --bs-btn-active-border-color: #52869f;
+  --bs-btn-active-shadow: none;
+  --bs-btn-disabled-color: #7b8b99;
+  --bs-btn-disabled-bg: none;
+  --bs-btn-disabled-border-color: #7b8b99;
+  --bs-gradient: none;
+}
+
+
 
 
 

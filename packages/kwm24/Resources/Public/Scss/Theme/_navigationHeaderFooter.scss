@@ -23,8 +23,17 @@
 }
 
  */
+//////////
+//HEADER//
+/////////
+#page-header {
+  background-color: #7b8b99 !important;
 
-//HEADER
+  .nav-link {
+    color: white;
+  }
+}
+
 .navbar-mainnavigation {
   display: flex;
   justify-content: space-evenly;
@@ -36,25 +45,6 @@
 }
 
 
-
-
-
-/* Style for the buttons */
-.btn-primary-sort {
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  text-decoration: none; /* Sicherstellen, dass keine Unterstreichung vorhanden ist */
-}
-
-/* Entferne Hover-Effekte für .btn-primary-sort */
-.btn-primary-sort:hover {
-  background-color: initial; /* Keine Hintergrundfarbe im Hover-Zustand */
-  color: white; /* Farbe bleibt im Hover-Zustand weiß */
-  border: none; /* Keine Umrandung im Hover-Zustand */
-}
-
 /* Keine Hover-Effekte für Links */
 .frame a[class=""]:hover,
 .frame a:not([class]):hover,
@@ -65,11 +55,12 @@ a {
   text-decoration: none; /* Keine Unterstreichung beim Hover */
 }
 
-/* Der Button für die aktive Kategorie bleibt unverändert */
-.btn-primary-sort.active {
-  background-color: #b3e5fc; /* Hellblau für aktive Kategorie */
-}
 
+
+
+///////////
+//FOOTER//
+/////////
 
 .footer-section-content{
   background-color: #7b8b99; /* Helles Blau */
@@ -77,7 +68,10 @@ a {
 
 
 
-//Sprache
+///////////
+//SPRACHE//
+/////////
+
 .language-menu {
   display: flex; /* Legt die Elemente nebeneinander */
   align-items: center; /* Vertikale Zentrierung */
@@ -89,12 +83,6 @@ a {
   align-items: center;
 }
 
-.language-menu div.active a img {
-  filter: brightness(1.2); /* Optional: Heller für aktive Sprache */
-}
-
-
-
 .language-menu div:not(:last-child)::after {
   content: ''; //Trennstrich
   display: block;
@@ -105,19 +93,31 @@ a {
 }
 
 
+
+///////////
+////SM////
+/////////
+
+//Soziale Medien Verlinkungen
 .footer-sociallinks .social-links {
   display: flex;
-  justify-content: flex-end; /* Icons rechts ausrichten */
-  gap: 15px; /* Abstand zwischen den Icons */
-  padding-right: 20px; /* Optional: Abstand vom rechten Rand */
+  justify-content: flex-end;
+  gap: 15px;
+  padding-right: 20px;
 }
 
 .footer-sociallinks .social-icon img {
-  width: 32px; /* Breite der Icons */
-  height: 32px; /* Höhe der Icons */
+  width: 36px;
+  height: 36px;
 }
 
-/* Copyright-Text nach rechts verschieben */
+
+
+
+///////////
+////CR////
+/////////
+//Copyright
 .footer-copyright {
   align-self: flex-end;
   margin-bottom: 20px;
@@ -137,6 +137,28 @@ a {
   display: inline-block;
 }
 
+/* Standard-Styling */
+.footer-item {
+  display: inline-block; /* Standardmäßig nebeneinander */
+  font-size: 16px; /* Standard-Schriftgröße */
+  margin: 10px; /* Abstand */
+}
+
+/* Für kleine Bildschirme unter 480px */
+@media (max-width: 480px) {
+  .frame-inner-footer {
+    display: flex; /* Flexbox-Layout */
+    flex-direction: column; /* Untereinander anordnen */
+    align-items: center; /* Zentrieren, falls nötig */
+  }
+
+  .footer-item {
+    font-size: 12px; /* Kleinere Schriftgröße */
+    margin: 5px 0; /* Vertikaler Abstand */
+    width: 100%; /* Optionale Breite */
+    text-align: center; /* Zentrierter Text */
+  }
+}
 
 
 

@@ -38,6 +38,13 @@ plugin.bootstrap_package {
     }
 }
 
+plugin.tx_mask {
+    view {
+        layoutRootPath = EXT:kwm24/Resources/Private/Layouts/ContentElements/
+    }
+}
+
+
 
 ########################
 ### CONTENT ELEMENTS ###

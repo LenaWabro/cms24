@@ -8,25 +8,20 @@
 //
 @import "EXT:bootstrap_package/Resources/Public/Scss/bootstrap5/theme";
 
-@import"card";
-@import"frame";
+@import "card";
+@import "frame";
 @import "loadingBar";
 @import "fancybox";
-@import"icons";
+@import "icons";
 @import "form";
 @import "navigationHeaderFooter";
-@import"buttons";
+@import "buttons";
+@import "fonts";
+@import "news";
 
 
 
 
-
-#page-header {
-  background-color: #7b8b99 !important;
-  .nav-link{
-    color: white;
-  }
-}
 
 .btn-quaternary{
   background-color: #7b8b99;
@@ -42,12 +37,6 @@
 }
 
 
-
-
-//FORM//
-.form-select{
-  width: 45%
-}
 
 
 
@@ -72,26 +61,8 @@
   text-decoration: none;
 }
 
-.breadcrumb-section {
-  display: none;
-}
 
 
-
-.mein-btn-read-more {
-  text-decoration: underline;
-  color: #7b8b99;
-}
-
-
-
-.short-divider {
-  width: 80%; /* Breite des Trennstrichs */
-  height: 1px; /* Dicke des Trennstrichs */
-  background-color: black; /* Farbe des Trennstrichs */
-  border: none; /* Entfernt den Standardrahmen von <hr> */
-  margin: 10px auto; /* Zentriert den Strich */
-}
 
 
 
