@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MessDetectorOptionsConfiguration">
+    <option name="transferred" value="true" />
+  </component>
+  <component name="PHPCSFixerOptionsConfiguration">
+    <option name="transferred" value="true" />
+  </component>
+  <component name="PHPCodeSnifferOptionsConfiguration">
+    <option name="highlightLevel" value="WARNING" />
+    <option name="transferred" value="true" />
+  </component>
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/bk2k/bootstrap-package" />
+      <path value="$PROJECT_DIR$/vendor/typo3/class-alias-loader" />
+      <path value="$PROJECT_DIR$/vendor/typo3/cms-backend" />
+      <path value="$PROJECT_DIR$/vendor/typo3/cms-belog" />
+      <path value="$PROJECT_DIR$/vendor/typo3/cms-beuser" />
+      <path value="$PROJECT_DIR$/vendor/typo3/cms-cli" />
+      <path value="$PROJECT_DIR$/vendor/typo3/cms-composer-installers" />
+      <path value="$PROJECT_DIR$/vendor/typo3/cms-core" />
+      <path value="$PROJECT_DIR$/vendor/typo3/cms-dashboard" />
+      <path value="$PROJECT_DIR$/vendor/typo3/cms-extbase" />
+      <path value="$PROJECT_DIR$/vendor/typo3/cms-extensionmanager" />
+      <path value="$PROJECT_DIR$/vendor/typo3/cms-filelist" />
+      <path value="$PROJECT_DIR$/vendor/typo3/cms-fluid" />
+      <path value="$PROJECT_DIR$/vendor/typo3/cms-fluid-styled-content" />
+      <path value="$PROJECT_DIR$/vendor/typo3/cms-form" />
+      <path value="$PROJECT_DIR$/vendor/typo3/cms-frontend" />
+      <path value="$PROJECT_DIR$/vendor/typo3/cms-impexp" />
+      <path value="$PROJECT_DIR$/vendor/typo3/cms-info" />
+      <path value="$PROJECT_DIR$/vendor/typo3/cms-install" />
+      <path value="$PROJECT_DIR$/vendor/typo3/cms-reactions" />
+      <path value="$PROJECT_DIR$/vendor/typo3/cms-rte-ckeditor" />
+      <path value="$PROJECT_DIR$/vendor/typo3/cms-seo" />
+      <path value="$PROJECT_DIR$/vendor/typo3/cms-setup" />
+      <path value="$PROJECT_DIR$/vendor/typo3/cms-sys-note" />
+      <path value="$PROJECT_DIR$/vendor/typo3/cms-t3editor" />
+      <path value="$PROJECT_DIR$/vendor/typo3/cms-tstemplate" />
+      <path value="$PROJECT_DIR$/vendor/typo3/cms-viewpage" />
+      <path value="$PROJECT_DIR$/vendor/typo3/cms-webhooks" />
+      <path value="$PROJECT_DIR$/vendor/typo3/html-sanitizer" />
+      <path value="$PROJECT_DIR$/vendor/typo3/cms-felogin" />
+      <path value="$PROJECT_DIR$/vendor/in2code/femanager" />
+      <path value="$PROJECT_DIR$/vendor/b13/container" />
+      <path value="$PROJECT_DIR$/vendor/bacon/bacon-qr-code" />
+      <path value="$PROJECT_DIR$/vendor/christian-riesen/base32" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/dasprid/enum" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/georgringer/news" />
+    </include_path>
+  </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="8.1">
+    <option name="suggestChangeDefaultLanguageLevel" value="false" />
+  </component>
+  <component name="PhpStanOptionsConfiguration">
+    <option name="transferred" value="true" />
+  </component>
+  <component name="PhpUnit">
+    <phpunit_settings>
+      <PhpUnitSettings custom_loader_path="$PROJECT_DIR$/vendor/autoload.php" />
+    </phpunit_settings>
+  </component>
+  <component name="PsalmOptionsConfiguration">
+    <option name="transferred" value="true" />
+  </component>
+</project>
