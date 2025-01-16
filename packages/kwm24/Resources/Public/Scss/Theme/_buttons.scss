@@ -1,38 +1,42 @@
-.btn-quaternary{
+.btn-quaternary {
   background-color: #7b8b99;
   border: none;
+  --bs-btn-active-bg: #52869f;
 }
 
-.btn-quaternary:hover{
+.btn-quaternary:hover {
   background-color: #52869f;
 }
 
 //links
-.text-secondary{
+.text-secondary {
   color: #52869f;
   text-decoration: underline;
 }
 
-.text-secondary:hover{
+.text-secondary:hover {
   color: #a4c3d0 !important;
 }
 
 //Download
-.btn-info{
+.btn-info {
   border: none;
   background: #a4c3d0;
+  --bs-btn-active-bg: #52869f;
 }
 
-.btn-info:hover{
+.btn-info:hover {
   background: #52869f;
 }
 
 // Button bei Detailseite
-.btn-success{
+.btn-success {
   background: #a4c3d0;
   border: none;
+  --bs-btn-active-bg: #52869f;
 }
-.btn-success:hover{
+
+.btn-success:hover {
   background: #52869f;
 }
 
@@ -42,19 +46,36 @@
 #c54 .news {
   background: #e7e9ec;
   border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .primary-sort {
   background: #e7e9ec;
   color: white;
   border: none;
+  padding: 12px;
+  width: 100%;
 }
 
 .primary-sort.active {
   background-color: #52869f;
   border-radius: 20px;
-  padding: 12px;
 }
+
+
+.btn-primary{
+ color:white;
+}
+.btn-primary:hover{
+  color:white;
+  background-color: #52869f;
+  --bs-btn-active-bg: #52869f;
+  --bs-btn-active-color: white;
+}
+
+
 
 
 
