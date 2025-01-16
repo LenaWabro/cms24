@@ -5,11 +5,13 @@
         <div class="row">
             <div class="col-12">
                 <div class="masonry-grid">
+                    <!--Schleife über alle Bilder in `data.tx_mask_images-->
                     <f:for each="{data.tx_mask_images}" as="file">
-                        <a class="masonry-grid-item"
-                           data-src="{f:uri.image(image: file, maxWidth: 400)}"
-                           data-fancybox="gallery"
-                           data-html='
+                        <a
+                            class="masonry-grid-item"
+                            data-src="{f:uri.image(image: file, maxWidth: 400)}"
+                            data-fancybox="gallery"
+                            data-html='
                              <div class="fancybox__content">
                                  <div class="fancybox__image">
                                      <img src="{f:uri.image(image: file, maxWidth: 400)}" alt="{file.alternative}">
@@ -17,13 +19,15 @@
                                  <div class="fancybox__info">
                                      <h2>{file.title}</h2>
                                      <p>{file.description}</p>
-                                     <a href="#" class="btn">DOWNLOAD</a>
+                                     <!--Der Code erstellt einen Download-Button für ein Bild in TYPO3. Mit {f:uri.image(image: file)} wird die URL des Bildes generiert, und das download-Attribut sorgt dafür, dass das Bild heruntergeladen wird-->
+                                     <a href="{f:uri.image(image: file)}" class="btn" download>DOWNLOAD</a>
                                  </div>
                              </div>'
                         >
-                            <img src="{f:uri.image(image: file, maxWidth: 400)}"
-                                 alt="{file.alternative}"
-                                 loading="lazy"/>
+                            <img
+                                src="{f:uri.image(image: file, maxWidth: 400)}"
+                                loading="lazy"
+                            />
                             <h3>{file.title}</h3>
                             <p class="image-description">{file.description}</p>
                         </a>
